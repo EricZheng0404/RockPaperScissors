@@ -6,7 +6,7 @@ A simple Rock Paper Scissors game implemented in JavaScript. Play against the co
 
 1. **Open the Game:**
 
-   - Open `index.html` in your web browser.
+   - Open `index.html` in your web browser or go to [https://ericzheng0404.github.io/RockPaperScissors/](https://ericzheng0404.github.io/RockPaperScissors/)
 
 2. **Start Playing:**
 
