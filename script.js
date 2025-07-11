@@ -29,14 +29,22 @@ function updateDisplay(humanChoice, computerChoice, result) {
     <p>You chose: ${humanChoice}</p>
     <p>Computer chose: ${computerChoice}</p>
     <p>Winner: ${result}</p>
-    <p>Score - You: ${humanScore} Computer: ${computerScore}</p>
+    <p><strong>Score - You: ${humanScore} Computer: ${computerScore}</strong></p>
   `;
 
   if (humanScore >= 5 || computerScore >= 5) {
     const winner =
       humanScore >= 5 ? "You win the game!" : "Computer wins the game!";
     resultDiv.innerHTML += `<h2>${winner}</h2>`;
+    resultDiv.innerHTML += `<button id="reset">Reset</button>`;
   }
+
+  const resetButton = document.getElementById("reset");
+  resetButton.addEventListener("click", () => {
+    humanScore = 0;
+    computerScore = 0;
+    resultDiv.innerHTML = "";
+  });
 }
 
 function handleChoice(humanChoice) {
